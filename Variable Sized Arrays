@@ -1,0 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int size_of_array,no_of_queries;
+    cin>>size_of_array>>no_of_queries;
+    vector<vector<int>> vec_out;
+    for (int i=0; i<size_of_array; i++) {
+        vector<int> vec_in;
+        int size_of_inner_vec;
+        cin>>size_of_inner_vec;
+        for(int j=0;j<size_of_inner_vec;j++){
+            int temp;
+            cin>>temp;
+            vec_in.push_back(temp);
+        }
+        vec_out.push_back(vec_in);
+    }
+    for(int i=0;i<no_of_queries;i++){
+        int a,b;
+        cin>>a>>b;
+        cout<<vec_out[a][b]<<endl;
+    }
+}
