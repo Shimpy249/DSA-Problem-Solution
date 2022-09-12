@@ -1,1 +1,1 @@
-# DSA-Problem-Solution
+# DSA-Problem-Solutions
